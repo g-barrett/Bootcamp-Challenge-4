@@ -29,6 +29,7 @@ body {
     font-weight: 600;
     border-bottom: 1px solid var(--brown);
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .quiz{
@@ -54,19 +55,47 @@ body {
     cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: var(--white);
     color: var(--brown);
 }
 
-#next-btn {
+#start-btn {
     color: var(--brown);
     font-weight: 500;
+    text-align: center;
     width: 150px;
     border: 0;
-    padding: 10px;
+    padding: 10px 270px;
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
-    display: none;
+}
+
+#timer {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 100px;
+}
+
+#question {
+    text-align: center;
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.list {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
 }
